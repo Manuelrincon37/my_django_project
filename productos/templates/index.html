@@ -17,7 +17,7 @@
         {%for producto in productos%}
         <tr>
             <td>
-                <a href="{% url 'productos: detalle' producto.id %}">
+                <a href="{% url 'productos:detalle' producto.id %}">
                     {{producto.nombre}}
                 </a>
             </td>

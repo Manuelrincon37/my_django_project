@@ -2,10 +2,11 @@
 
 {% block content %}
 <form 
+    novalidate
     action = "{% url 'productos:formulario' %}" 
     method = 'post'>
     {% csrf_token %}
     {{ form }}
-    <imput type ="submit" value ="Enviar"/>
+    <button type="submit" value="Enviar">Enviar</button> 
 </form>
 {% endblock %}
